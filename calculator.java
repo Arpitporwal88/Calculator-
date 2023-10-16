@@ -5,7 +5,7 @@ class Calculator extends WindowAdapter implements ActionListener{
 Label l1;
 Button b0,b1, b2,b3,b4,b5,b6,b7,b8,b9;
 Button badd,bsub,bmult,bdiv,bmod,bcalc,bclr,bpts,bneg,bback;
-//double xd;
+double xd;
 float xd;
 float num1,num2,check;
 Calculator(){  
