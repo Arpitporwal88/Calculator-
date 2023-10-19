@@ -1,20 +1,20 @@
-import java.awt.*; 
+import java.awt.*;    
 import java.awt.event.*;  
-class Calculator extends WindowAdapter implements ActionListener{ 
-  Frame f; 
+class Calculator extends WindowAdapter implements ActionListener  { 
+Frame f; 
 Label l1;
 Button b0,b1, b2,b3,b4,b5,b6,b7,b8,b9;
-Button badd,bsub,bmult,bdiv,bmod,bcalc,bclr,bpts,bneg,bback;
+Button badd,bsub,bmult,bdiv,bmod,bcalc,bclr,bpts,bneg,bback;
 float xd;
 float num1,num2,check;
 Calculator(){  
-  f= new Frame(" CALCULATOR");
+f= new Frame(" CALCULATOR");
 l1=new Label(); 
 l1.setBackground(Color.WHITE);
 l1.setBounds(50,50,260,60);
+l1.setFont(new Font("Arial", Font.BOLD,22));
 
-
-b1=new  Button("1");
+b1=new Button("1");
   b1.setBounds(50,340,50,50);
 b2=new Button("2");
   b2.setBounds(120,340,50,50);
@@ -67,7 +67,7 @@ b7.addActionListener(this);
 b8.addActionListener(this); 
 b9.addActionListener(this);  
 b0.addActionListener(this);
- b1.setBackground(Color.LIGHT_GRAY);
+b1.setBackground(Color.LIGHT_GRAY);
 b2.setBackground(Color.LIGHT_GRAY);
 b3.setBackground(Color.LIGHT_GRAY);
 b4.setBackground(Color.LIGHT_GRAY);
@@ -102,6 +102,26 @@ bdiv.setBackground(Color.PINK);
 bmod.setBackground(Color.PINK);
 bcalc.setBackground(Color.PINK);
 bclr.setBackground(Color.PINK);
+b0.setFont(new Font("Arial", Font.BOLD, 18));
+b1.setFont(new Font("Arial", Font.BOLD,18));
+b2.setFont(new Font("Arial", Font.BOLD,18));
+b3.setFont(new Font("Arial", Font.BOLD,18));
+b4.setFont(new Font("Arial", Font.BOLD,18));
+b5.setFont(new Font("Arial", Font.BOLD,18));
+b6.setFont(new Font("Arial", Font.BOLD, 18));
+b7.setFont(new Font("Arial", Font.BOLD,18));
+b8.setFont(new Font("Arial", Font.BOLD,18));
+b9.setFont(new Font("Arial", Font.BOLD,18));
+bpts.setFont(new Font("Arial", Font.BOLD,18));
+bback.setFont(new Font("Arial", Font.BOLD,15));
+bneg.setFont(new Font("Arial", Font.BOLD, 18));
+badd.setFont(new Font("Arial", Font.BOLD,18));
+bsub.setFont(new Font("Arial", Font.BOLD,18));
+bmult.setFont(new Font("Arial", Font.BOLD,18));
+bdiv.setFont(new Font("Arial", Font.BOLD,18));
+bmod.setFont(new Font("Arial", Font.BOLD,18));
+bcalc.setFont(new Font("Arial", Font.BOLD,18));
+bclr.setFont(new Font("Arial", Font.BOLD,18));
 
 f.addWindowListener(this);
 f.setBackground(Color.BLACK);
@@ -123,76 +143,76 @@ public void windowClosing(WindowEvent e) {
 
 public void actionPerformed(ActionEvent e){ 
 try{
-  String z,zt;
+  String s1,s2;
                      
 if(e.getSource()==b1){
- zt=l1.getText();
-  z=zt+"1";
-  l1.setText(z);
+ s2=l1.getText();
+  s1=s2+"1";
+  l1.setText(s1);
 }
 if(e.getSource()==b2){
-zt=l1.getText();
-z=zt+"2";
-l1.setText(z);
+s2=l1.getText();
+s1=s2+"2";
+l1.setText(s1);
 }
 if(e.getSource()==b3){
-  zt=l1.getText();
-  z=zt+"3";
-  l1.setText(z);
+  s2=l1.getText();
+  s1=s2+"3";
+  l1.setText(s1);
 }
 if(e.getSource()==b4){
-  zt=l1.getText();
-  z=zt+"4";
-  l1.setText(z);
+  s2=l1.getText();
+  s1=s2+"4";
+  l1.setText(s1);
 }
 if(e.getSource()==b5){
-  zt=l1.getText();
-  z=zt+"5";
-  l1.setText(z);
+  s2=l1.getText();
+  s1=s2+"5";
+  l1.setText(s1);
 }
 if(e.getSource()==b6){
-  zt=l1.getText();
-  z=zt+"6";
-  l1.setText(z);
+  s2=l1.getText();
+  s1=s2+"6";
+  l1.setText(s1);
 }
 if(e.getSource()==b7){
-  zt=l1.getText();
-  z=zt+"7";
-  l1.setText(z);
+  s2=l1.getText();
+  s1=s2+"7";
+  l1.setText(s1);
 }
 if(e.getSource()==b8){
-  zt=l1.getText();
-  z=zt+"8";
-  l1.setText(z);
+  s2=l1.getText();
+  s1=s2+"8";
+  l1.setText(s1);
 }
 if(e.getSource()==b9){
-  zt=l1.getText();
-  z=zt+"9";
-  l1.setText(z);
+  s2=l1.getText();
+  s1=s2+"9";
+  l1.setText(s1);
 }
 if(e.getSource()==b0){
-  zt=l1.getText();
-  z=zt+"0";
-  l1.setText(z);
+  s2=l1.getText();
+  s1=s2+"0";
+  l1.setText(s1);
 }
 
 if(e.getSource()==bpts){  
-  zt=l1.getText();
-  z=zt+".";
-  l1.setText(z);
+  s2=l1.getText();
+  s1=s2+".";
+  l1.setText(s1);
 }
 if(e.getSource()==bneg){ 
-  zt=l1.getText();
-  z="-"+zt;
-  l1.setText(z);
+  s2=l1.getText();
+  s1="-"+s2;
+  l1.setText(s1);
 }
 
 if(e.getSource()==bback){ 
-  zt=l1.getText();
+  s2=l1.getText();
   try{
-    z=zt.substring(0, zt.length()-1);
+    s1=s2.substring(0, s2.length()-1);
     }catch(StringIndexOutOfBoundsException f){return;}
-  l1.setText(z);
+  l1.setText(s1);
 }
              
 if(e.getSource()==badd){                     
@@ -202,8 +222,8 @@ if(e.getSource()==badd){
       l1.setText(" ");
       return;
     }
-  z="";
-  l1.setText(z);
+  s1="";
+  l1.setText(s1);
   check=1;
 }
 if(e.getSource()==bsub){                   
@@ -213,8 +233,8 @@ if(e.getSource()==bsub){
       l1.setText(" ");
       return;
     }
-  z="";
-  l1.setText(z);
+  s1="";
+  l1.setText(s1);
   check=2;
 }
 if(e.getSource()==bmult){                  
@@ -224,8 +244,8 @@ if(e.getSource()==bmult){
       l1.setText(" ");
       return;
     }
-  z="";
-  l1.setText(z);
+  s1="";
+  l1.setText(s1);
   check=3;
 }
 if(e.getSource()==bdiv){                 
@@ -235,8 +255,8 @@ if(e.getSource()==bdiv){
       l1.setText(" ");
       return;
     }
-  z="";
-  l1.setText(z);
+  s1="";
+  l1.setText(s1);
   check=4;
 }
 if(e.getSource()==bmod){                
@@ -246,8 +266,8 @@ if(e.getSource()==bmod){
       l1.setText(" ");
       return;
     }
-  z="";
-  l1.setText(z);
+  s1="";
+  l1.setText(s1);
   check=5;
 }
                        
@@ -276,8 +296,8 @@ if(e.getSource()==bclr){
   num2=0;
   check=0;
   xd=0;
-   z="";
-   l1.setText(z);
+   s1="";
+   l1.setText(s1);
    } 
 }
 catch(Exception er){
