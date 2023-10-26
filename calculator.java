@@ -5,7 +5,7 @@ Frame f;
 Label l1;
 Button b0,b1, b2,b3,b4,b5,b6,b7,b8,b9;
 Button badd,bsub,bmult,bdiv,bmod,bcalc,bclr,bpts,bneg,bback;
-float xd;
+float ft;
 float num1,num2,check;
 Calculator(){  
 f= new Frame(" CALCULATOR");
@@ -279,23 +279,23 @@ if(e.getSource()==bcalc){
       return;
     }
   if(check==1)
-    xd =num1+num2;
+    ft =num1+num2;
   if(check==2)
-    xd =num1-num2;
+    ft =num1-num2;
   if(check==3)
-    xd =num1*num2;
+    ft =num1*num2;
   if(check==4)
-    xd =num1/num2; 
+    ft =num1/num2; 
   if(check==5)
-    xd =num1%num2;    
-  l1.setText(String.valueOf(xd));
+    ft =num1%num2;    
+  l1.setText(String.valueOf(ft));
 }
                        
 if(e.getSource()==bclr){
   num1=0;
   num2=0;
   check=0;
-  xd=0;
+  ft=0;
    s1="";
    l1.setText(s1);
    } 
